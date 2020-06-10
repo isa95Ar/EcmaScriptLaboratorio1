@@ -1,3 +1,4 @@
+//clase humano 
 class humano {
   constructor(nombre= "Jimy",edad = 24,localidad="Bariloche"){
      this.nombre = nombre,
