@@ -21,21 +21,20 @@ class humano {
 class alumno extends humano {
   constructor (nombre,edad,localidad,carrera){
      super(nombre,edad,localidad),
-     this.carrera = carrera
+     this.carrera = carrera;
+     const elem = document.getElementById("button");
+     elem.addEventListener('click', ()=>{
+       alert(this.nombre);
+     });
   }
    
   getCarrera(){
     return `La carrera del alumno es ${this.carrera}`;
   }
   
-  
 }
-const student = new alumno("Isaias",24,"bariloche","Desarrollo de Software");
-const year = student.getYearBorn();
-console.log(year);
 
-const humanR = new humano();
-console.log(humanR.saltar());
-console.log(student.saltar());
-console.log(humanR.getCarrera());
+const student = new alumno("Isaias",24,"bariloche","Desarrollo de Software");
+
+ //tira bardo
 
